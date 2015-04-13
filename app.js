@@ -32,7 +32,7 @@ app.get('/login', function (req, res) {
   res.sendFile(htmldir + '/login.html');
 });
 
-app.post('/register', 
+app.post('/register',  
 	  passport.authenticate('local-register', 
 	  								{  successRedirect: '/',
 	                                   failureRedirect: '/login',
